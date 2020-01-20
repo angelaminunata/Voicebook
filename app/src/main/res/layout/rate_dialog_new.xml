@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/rate_dialog_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/item_call_record_namecontact_textsize"
+        android:text="@string/rate_dialog_txt_inform" />
+
+    <LinearLayout
+        android:id="@+id/rate_dialog_ll_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_dialog_txt_title"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/rate_dialog_img_sad"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_sad_selector"
+            android:contentDescription="@string/rate_dialog_btn_rate_remind_late"
+            android:src="@drawable/ic_sad" />
+
+        <ImageView
+            android:id="@+id/rate_dialog_img_happy"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_happy_selector"
+            android:contentDescription="@string/rate_dialog_btn_rate_now"
+            android:src="@drawable/ic_happy" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/rate_dialog_cb_nothanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rate_dialog_ll_rate"
+        android:text="@string/checkbox_dont_show_again" />
+
+</RelativeLayout>
